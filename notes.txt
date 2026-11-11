@@ -1,0 +1,17 @@
+MCP stands for Model Context Protocol.
+
+MCP provides a standard way for AI applications to connect
+to external tools and resources.
+
+An MCP server exposes capabilities such as tools.
+
+An MCP client connects to the server and discovers
+the capabilities provided by the server.
+
+AI agents can use these capabilities to perform actions.
+
+LangChain is a framework for building applications
+powered by language models.
+
+LangChain provides reusable components for models,
+prompts, tools, retrieval and agents.

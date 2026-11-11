@@ -1,0 +1,19 @@
+# Direct dependencies only; transitive packages (langgraph, ollama, pydantic, ...)
+# are resolved by pip. Versions pinned to the set verified working together.
+
+# LangChain
+langchain==1.4.9
+langchain-core==1.7.7
+langchain-community==0.4.2
+langchain-text-splitters==1.1.3
+langchain-ollama==1.1.0
+
+# MCP
+langchain-mcp-adapters==0.3.2
+# Must stay on 1.x: langchain-mcp-adapters 0.3.x imports APIs removed in mcp 2.x.
+# server.py uses the FastMCP bundled here (mcp.server.fastmcp), not the
+# standalone `fastmcp` package, which requires mcp 2.x.
+mcp==1.30.0
+
+# Vector store
+faiss-cpu==1.15.1
